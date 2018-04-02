@@ -27,7 +27,7 @@ To call one node RPC API (replace port with the port map to your target node):
     curl -v 0.0.0.0:2216/peers
     curl -v 0.0.0.0:2216/blocks
 
-# LICENSE
+# License
 
 Copyright 2018 Fetch Technology Pte Ltd.
 

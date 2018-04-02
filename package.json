@@ -2,6 +2,7 @@
   "name": "blockchain-base",
   "version": "1.0.0",
   "description": "Base skeleton for Fetch's blockchain training program",
+  "repository": "git@github.com:fetch-technology/blockchain-training.git",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -10,7 +11,7 @@
     "blockhain"
   ],
   "author": "Fetch Technology Pte Ltd",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "dependencies": {
     "express": "^4.16.3"
   }
