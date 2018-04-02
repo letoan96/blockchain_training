@@ -2,6 +2,31 @@
 
 DIY blockchain from Fetch's blockchain training program.
 
+# Usage
+
+Start blockchain nodes:
+
+    docker-compose up --build --scale node=4
+
+Cleanup:
+
+    docker-compose down
+
+Display node status:
+
+    docker ps
+    # example result
+    CONTAINER ID        IMAGE                 COMMAND                  CREATED             STATUS              PORTS                    NAMES
+    2ade9509f3b8        blockchainbase_node   "/bin/sh -c 'cd /blo…"   28 seconds ago      Up 28 seconds       0.0.0.0:2219->2345/tcp   blockchaintraining_node_2
+    ff544707ec6f        blockchainbase_node   "/bin/sh -c 'cd /blo…"   28 seconds ago      Up 27 seconds       0.0.0.0:2218->2345/tcp   blockchaintraining_node_4
+    01d785dbd6ad        blockchainbase_node   "/bin/sh -c 'cd /blo…"   28 seconds ago      Up 28 seconds       0.0.0.0:2217->2345/tcp   blockchaintraining_node_3
+    10d87da8ff36        blockchainbase_node   "/bin/sh -c 'cd /blo…"   28 seconds ago      Up 28 seconds       0.0.0.0:2216->2345/tcp   blockchaintraining_node_1
+
+To call one node RPC API (replace port with the port map to your target node):
+
+    curl -v 0.0.0.0:2216/peers
+    curl -v 0.0.0.0:2216/blocks
+
 # LICENSE
 
 Copyright 2018 Fetch Technology Pte Ltd.
