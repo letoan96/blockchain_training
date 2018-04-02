@@ -12,7 +12,7 @@ class Block {
 }
 
 
-class Node {
+class Server {
   constructor() {
 
   }
@@ -28,4 +28,4 @@ class Node {
 
 
 exports.Block = Block
-exports.Node = Node
+exports.Server = Server
